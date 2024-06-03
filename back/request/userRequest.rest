@@ -1,0 +1,66 @@
+post http://localhost:3000/api/v1/auth/login
+content-type: application/json
+
+{
+"username": "admin",
+"password": "admin@123"
+}
+
+###
+
+post http://localhost:3000/api/v1/auth/register
+content-type: application/json
+
+{
+"role": "66157d1e7aff6b63452074c9",
+"first_name": "caretaker2",
+"last_name": "caretaker2",
+"email": "caretaker5@hotmail.com",
+"password": "Admin@123"
+}
+
+###
+post http://localhost:3000/api/v1/caretakers
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjIxZTNjNWI5ZGZhNWYwMDBkZjQyZDciLCJyb2xlIjoiNjYxNTdkMWU3YWZmNmI2MzQ1MjA3NGM5IiwiaWF0IjoxNzEzNDk3MDI5LCJleHAiOjE3MTM1ODM0Mjl9.0jFRTj84klt_92-3ZoaeWogsxnJXR4g6FM4t30OxDec
+
+{
+  "services": [],
+  "pets": [],
+  "status": "",
+  "active_requests": 2,
+  "description": "String"
+}
+
+###
+
+post http://localhost:3000/api/v1/auth/register
+content-type: application/json
+
+{
+"role": "66157d1e7aff6b63452074ca",
+"first_name": "client",
+"last_name": "client",
+"email": "clientr@hotmail.com",
+"password": "Admin@123"
+}
+
+###
+
+post http://localhost:3000/api/v1/auth/login
+content-type: application/json
+
+{
+"username": "client1713309808567",
+"password": "Admin@123"
+}
+
+###
+
+post http://localhost:3000/api/v1/auth/login
+content-type: application/json
+
+{
+"username": "caretaker21713497029212",
+"password": "Admin@123"
+}

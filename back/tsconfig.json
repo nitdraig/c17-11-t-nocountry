@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@Auth/*": ["src/auth/*"],
+      "@Care/*": ["src/care/*"],
+      "@Caretaker/*": ["src/caretaker/*"],
+      "@Constants/*": ["src/constants/*"],
+      "@Decorators/*": ["src/decorators/*"],
+      "@Guards/*": ["src/guards/*"],
+      "@Helpers/*": ["src/helpers/*"],
+      "@Interfaces/*": ["src/interfaces/*"],
+      "@Payment/*": ["src/payment/*"],
+      "@Pet/*": ["src/pet/*"],
+      "@Reviews/*": ["src/reviews/*"],
+      "@Role/*": ["src/role/*"],
+      "@Service/*": ["src/service/*"],
+      "@User/*": ["src/user/*"],
+      "@Utils/*": ["src/utils/*"]
+    }
+  }
+}

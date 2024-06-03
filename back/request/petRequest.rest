@@ -1,0 +1,40 @@
+// Para enviar solicitud presionar Send Request
+
+// Agregar una mascota
+post http://localhost:3000/api/v1/pets
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjFlYWFiMWI1YmUyMzFmNzllZTFkMDEiLCJyb2xlIjoiNjYxNTdkMWU3YWZmNmI2MzQ1MjA3NGM4IiwiaWF0IjoxNzEzNTcwNjIxLCJleHAiOjE3MTM2NTcwMjF9.Ex0wRP4F84YAEChlSwrld7_sKKT7kQOpHQRkZF0W5ew
+
+{
+  "name": "dinosaurio"
+}
+
+###
+
+// Obtener todas las mascotas
+get http://localhost:3000/api/v1/pets
+
+###
+
+// Obtener mascota por su id
+get http://localhost:3000/api/v1/pets/661f0411d6423995b91ceaf0
+
+###
+
+// Modificar una mascota
+patch http://localhost:3000/api/v1/pets/661f0411d6423995b91ceaf0
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjFlYWFiMWI1YmUyMzFmNzllZTFkMDEiLCJyb2xlIjoiNjYxNTdkMWU3YWZmNmI2MzQ1MjA3NGM4IiwiaWF0IjoxNzEzNTcwNjIxLCJleHAiOjE3MTM2NTcwMjF9.Ex0wRP4F84YAEChlSwrld7_sKKT7kQOpHQRkZF0W5ew
+
+{
+  "name": "tiburon"
+}
+
+###
+
+//Eliminar una mascota
+delete http://localhost:3000/api/v1/pets/6622aae9818093bebef0de15
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjFlYWFiMWI1YmUyMzFmNzllZTFkMDEiLCJyb2xlIjoiNjYxNTdkMWU3YWZmNmI2MzQ1MjA3NGM4IiwiaWF0IjoxNzEzNTcwNjIxLCJleHAiOjE3MTM2NTcwMjF9.Ex0wRP4F84YAEChlSwrld7_sKKT7kQOpHQRkZF0W5ew
+
+

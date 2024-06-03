@@ -1,0 +1,22 @@
+#backend
+
+# compiled output
+/back/dist
+/back/node_modules
+/back/.env
+
+# Logs
+/back/logs
+/back/*.log
+/back/npm-debug.log*
+/back/pnpm-debug.log*
+/back/yarn-debug.log*
+/back/yarn-error.log*
+/back/lerna-debug.log*
+
+# Tests
+/back/coverage
+/back/.nyc_output
+
+/front/node_modules
+/front/dist
